@@ -13,13 +13,20 @@ nav {
   width: 100%;
   background-color: var(--primary-color);
   padding: 0px 4%;
-  z-index: 999;
+  z-index: 998;
 }
 
 .menu {
   display: none;
+  min-height: 48px;
+  min-width: 48px;
   font-size: 50.5px;
   color: var(--font-color);
+}
+
+span .fa {
+  min-height: 44px;
+  min-width: 44px;
 }
 
 span.fa.fa-bars,

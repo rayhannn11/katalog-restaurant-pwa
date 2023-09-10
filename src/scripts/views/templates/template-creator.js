@@ -54,6 +54,7 @@ const createRestaurantDetailTemplate = (restaurant, urlImg) => `
 
 const createRestaurantItemTemplate = (restaurant) => `
 <div tabindex="0" id="card" class="card">
+<div tabindex="0" class="card-content-rating">⭐${restaurant.rating}</div>
         <div class="img-container">
             <img tabindex="0" class="card-image" alt="${
               restaurant.name
@@ -63,18 +64,13 @@ const createRestaurantItemTemplate = (restaurant) => `
     : "https://picsum.photos/id/666/800/450?grayscale"
 }"/>
         </div>
-
         <div tabindex="0" class="card-content">
             <div class="card-content-info">
               <h3>
                 <a href="/#/detail/${restaurant.id}">${restaurant.name}</a>
               </h3>
-                <div>
-                ⭐
-                    <span>${restaurant.rating}</span>
-                </div>
             </div>
-            <p class="truncate">${restaurant.description}</p>   
+            <p class="truncate">${restaurant.description}</p>  
         </div>  
      </div>
 `;

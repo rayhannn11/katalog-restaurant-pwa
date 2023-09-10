@@ -13,7 +13,7 @@
   .nav-item a,
   .hero__subtitle,
   .btn {
-    font-size: 1em;
+    font-size: 50.5px;
   }
 
   .restaurant__menus {
@@ -88,24 +88,13 @@
     margin-bottom: 1em;
   }
 
-  #explore-restaurant {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 1.545em;
-    grid-row-gap: 1.545em;
-  }
-
   .card {
     width: 300px;
   }
 }
 
 /* Large devices ( >= 992px ) */
-@media only screen and (min-width: 996px) {
-  #explore-restaurant {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+@media only screen and (min-width: 992px) {
   .card {
     width: 300px;
   }
@@ -118,10 +107,6 @@
   }
   main {
     max-width: 1200px;
-  }
-  #explore-restaurant {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .card {
     width: 340px;

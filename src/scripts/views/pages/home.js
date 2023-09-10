@@ -6,7 +6,7 @@ const Home = {
     return `
     <div class="home">
         <div class="hero__wrapper">
-            <img src="./images/hero/hero-image_2.jpg" alt="hero__image" />
+            <img src="./images/hero/hero-image_2.png" alt="hero__image" />
             <div tabindex="0" class="hero__text">
                 <h1 class="hero__title">Welcome to Katalog Restaurant</h1>
 
@@ -20,7 +20,7 @@ const Home = {
             </div>
         </div>
 
-        <h2 tabindex="0" class="main-content__title">✨Explore Restaurant✨</h2>
+        <h2 tabindex="0" id="explore-restaurant-list" class="main-content__title">✨Explore Restaurant✨</h2>
         <section id="explore-restaurant"></section>
     </div>
     `;
