@@ -24,6 +24,20 @@ class App {
     const page = routes[url];
     this._content.innerHTML = await page.render();
     await page.afterRender();
+
+    // Debug Skip Content Issue
+    const exploreRestaurant = document.querySelector("#explore-restaurant");
+    const mainContent = document.querySelector("#main-content");
+    const skipLink = document.querySelector(".skip-link");
+    skipLink.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (exploreRestaurant) {
+        exploreRestaurant.scrollIntoView({ behavior: "smooth" });
+      } else {
+        mainContent.scrollIntoView({ behavior: "smooth" });
+      }
+      skipLink.blur();
+    });
   }
 }
 
